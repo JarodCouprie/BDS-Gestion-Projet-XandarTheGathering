@@ -1,0 +1,90 @@
+*{
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    list-style: none;
+    box-sizing: border-box;
+    border: none;
+    outline: none;
+}
+
+@font-face {
+    font-family: "ricks";
+    src: url(../font/RicksAmericanNF.ttf);
+}
+
+body{
+    height: 100vh;
+    background-image: url("/assets/img/BasqueCountryHero.jpeg");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+nav{
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    width: 80px;
+    height: 100%;
+    background: #fff;
+    overflow: hidden;
+    transition: width 0.2s linear;
+    box-shadow: 0 20px 35px rgba(0, 0, 0, 0.1);
+}
+
+.logo{
+    text-align: center;
+    display: flex;
+    transition: all 0.5s ease;
+    margin: 10px 0 0 10px;
+    align-items: center;
+}
+
+.logo img{
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+}
+
+.logo span{
+    font-weight: bold;
+    padding-left: 15px;
+    font-size: 18px;
+    text-transform: uppercase;
+}
+
+a{
+    position: relative;
+    font-size: 14px;
+    display: table;
+    width: 350px;
+    padding: 10px;
+}
+
+.fas{
+    position: relative;
+    width: 70px;
+    height: 40px;
+    top: 14px;
+    font-size: 20px;
+    text-align: center;
+}
+
+.nav-item{
+    margin-left: 10px;
+}
+
+a:hover{
+    background:#eee;
+}
+
+nav:hover{
+    width: 350px;
+    transition: all 0.5s ease;
+}
+
+.logout{
+    position: absolute;
+    bottom: 0;
+}
