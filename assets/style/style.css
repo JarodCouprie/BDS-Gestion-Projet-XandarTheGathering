@@ -20,71 +20,57 @@ body{
     background-size: cover;
 }
 
-nav{
+header{
     position: absolute;
     top: 0;
-    bottom: 0;
     left: 0;
-    width: 80px;
+    width: 60px;
     height: 100%;
-    background: #fff;
+    background-color: #fff;
+    transition: width 0.3s linear;
     overflow: hidden;
-    transition: width 0.2s linear;
     box-shadow: 0 20px 35px rgba(0, 0, 0, 0.1);
+    padding-left: 10px;
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
 }
 
-.logo{
-    text-align: center;
+header:hover{
+    transition: width 0.8s ease;
+    width: 310px;
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+}
+
+nav{
+    width: 300px;
+    height: 100%;
     display: flex;
-    transition: all 0.5s ease;
-    margin: 10px 0 0 10px;
-    align-items: center;
+    flex-direction: column;
+    justify-content: space-between;
 }
 
-.logo img{
+.nav-link{
+    display: flex;
+    width: 300px;
+    height: 60px;
+    align-items: center;
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+    color: #0f0f0f;
+}
+
+.nav-link img{
     width: 50px;
     height: 50px;
-    border-radius: 50%;
 }
 
-.logo span{
-    font-weight: bold;
-    padding-left: 15px;
-    font-size: 18px;
-    text-transform: uppercase;
+.nav-link h2{
+    margin-left: 20px;
 }
 
-a{
-    position: relative;
-    font-size: 14px;
-    display: table;
-    width: 350px;
-    padding: 10px;
-}
-
-.fas{
-    position: relative;
-    width: 70px;
-    height: 40px;
-    top: 14px;
-    font-size: 20px;
-    text-align: center;
-}
-
-.nav-item{
-    margin-left: 10px;
-}
-
-a:hover{
-    background:#eee;
-}
-
-nav:hover{
-    width: 350px;
-    transition: all 0.5s ease;
-}
-
-.logout{
-    position: absolute;
-    bottom: 0;
+.nav-link:hover{
+    background: rgb(176,255,216);
+    background: #d5d5d5;
+    transition: 0.3s ease-in-out;
 }
